@@ -35,7 +35,7 @@ RUN ./install-build-tools.sh
 
 RUN yum install bzip2 make which -y
 RUN source ./set-pnda-env.sh \
-    && ./build-pnda.sh BRANCH $PNDARELEASE $HADOOPDIST
+    && PARALLEL="--jobs 1" ./build-pnda.sh BRANCH $PNDARELEASE $HADOOPDIST
 
 FROM nginx:alpine
 
