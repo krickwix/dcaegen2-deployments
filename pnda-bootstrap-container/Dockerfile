@@ -22,7 +22,7 @@ ARG PNDARELEASE=develop
 
 # RUN git clone -b $PNDARELEASE https://github.com/pndaproject/pnda-cli.git
 # Use this repository temporary until it's merged into PNDA upstream
-RUN git clone -b existing-network https://github.com/donaldh/pnda-cli.git
+RUN git clone -b $PNDARELEASE https://github.com/pndaproject/pnda-cli.git
 RUN git clone -b $PNDARELEASE https://github.com/pndaproject/platform-salt.git
 
 RUN pip2 install --no-cache-dir -r pnda-cli/cli/requirements.txt --install-option="--prefix=/install"
