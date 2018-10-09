@@ -39,7 +39,10 @@ const dcaeDeps  =
 		'dep-service-change-handler',
 		'dep-policy-handler',
 		'dep-dcae-ves-collector',
-		'dep-dcae-tca-analytics'
+		'dep-dcae-tca-analytics',
+		'dep-dcae-prh',
+		'dep-dcae-hv-ves-collector',
+		'dep-dcae-datafile-collector'
 	];
 
 const status = require('./get-status');
