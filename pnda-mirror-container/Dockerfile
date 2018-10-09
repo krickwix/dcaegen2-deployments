@@ -21,10 +21,6 @@ FROM centos:7.5.1804 as build
 ARG PNDARELEASE=develop
 # Can be HDP or CDH
 ARG HADOOPDIST=HDP
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 
 RUN yum clean all && rm -rf /var/cache/yum/* && yum install gettext git -y
 
