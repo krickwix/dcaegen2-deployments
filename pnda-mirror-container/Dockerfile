@@ -18,7 +18,7 @@
 
 FROM centos:7.5.1804 as build
 
-ARG PNDARELEASE=develop
+ARG PNDARELEASE=release/5.0
 # Can be HDP or CDH
 ARG HADOOPDIST=HDP
 
