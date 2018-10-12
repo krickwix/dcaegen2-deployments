@@ -24,7 +24,7 @@ ARG HADOOPDIST=HDP
 
 RUN yum clean all && rm -rf /var/cache/yum/* && yum install gettext git -y
 
-RUN git clone -b $PNDARELEASE https://github.com/pndaproject/pnda.git
+RUN git clone -b $PNDARELEASE https://github.com/klyr/pnda.git
 
 WORKDIR /pnda/mirror
 # Add the -r flag to mirror rpm packages
